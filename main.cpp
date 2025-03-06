@@ -40,5 +40,10 @@ int main()
     std::cout << "New value of *p: " << *p << std::endl;         // Outputs 50
     std::cout << "New value of *super: " << *super << std::endl; // Outputs 50
 
+    int pole[3] = {1, 2, 3};
+    std::cout << "Array value " << *(pole + 1) << std::endl;     // Outputs 2
+    std::cout << "Array value " << *(pole) << std::endl;         // Outputs 1
+    std::cout << "Array value " << *(pole + 5) << std::endl;     // Outputs 0
+    std::cout << "Array value " << *(pole + 2 - 2) << std::endl; // Outputs 1
     return 0;
 }
